@@ -5,6 +5,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 import site.dongxiaoxu.springbootdemo.site.dongxiaoxu.model.User;
 import site.dongxiaoxu.springbootdemo.site.dongxiaoxu.service.IUserService;
+import site.dongxiaoxu.springboot.demo.aop.UserInfo;
+import site.dongxiaoxu.springboot.demo.aop.UserInfoParam;
 
 import java.util.List;
 
@@ -40,6 +42,13 @@ public class UserController {
     public void deleteUser(@PathVariable("id") String id) {
         this.userService.deleteUser(id);
     }
+    
+    @GetMapping("/getUserInfo")
+    public Map<String, Object> getUserInfo(@UserInfoParam UserInfo userInfo, HttpServletRequest request, String userName) throws IOException {
+        Map<String, Object> rltMap = new HashMap<>();
 
+        rltMap.put("message", userInfo.getDispName());
+        return rltMap;
+    }
 
 }
