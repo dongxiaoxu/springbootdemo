@@ -1,4 +1,4 @@
-package site.dongxiaoxu.springboot.demo.aop;
+package site.dongxiaoxu.springbootdemo.config;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.method.support.HandlerMethodArgumentResolver;

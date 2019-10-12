@@ -1,4 +1,4 @@
-package site.dongxiaoxu.springboot.demo.aop;
+package site.dongxiaoxu.springbootdemo.config;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

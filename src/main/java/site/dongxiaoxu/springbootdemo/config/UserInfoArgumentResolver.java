@@ -1,4 +1,4 @@
-package site.dongxiaoxu.springboot.demo.aop;
+package site.dongxiaoxu.springbootdemo.config;
 
 import org.springframework.core.MethodParameter;
 import org.springframework.web.bind.support.WebDataBinderFactory;
@@ -7,7 +7,6 @@ import org.springframework.web.method.support.HandlerMethodArgumentResolver;
 import org.springframework.web.method.support.ModelAndViewContainer;
 
 import javax.servlet.http.HttpServletRequest;
-import java.util.Arrays;
 
 public class UserInfoArgumentResolver implements HandlerMethodArgumentResolver {
     @Override

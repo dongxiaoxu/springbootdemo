@@ -1,6 +1,6 @@
-package site.dongxiaoxu.springbootdemo.site.dongxiaoxu.service;
+package site.dongxiaoxu.springbootdemo.service;
 
-import site.dongxiaoxu.springbootdemo.site.dongxiaoxu.model.User;
+import site.dongxiaoxu.springbootdemo.model.User;
 
 import java.util.List;
 

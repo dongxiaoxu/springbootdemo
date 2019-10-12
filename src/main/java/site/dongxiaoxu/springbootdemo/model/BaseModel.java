@@ -1,4 +1,4 @@
-package site.dongxiaoxu.springbootdemo.site.dongxiaoxu.model;
+package site.dongxiaoxu.springbootdemo.model;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;

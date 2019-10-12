@@ -1,14 +1,18 @@
-package site.dongxiaoxu.springbootdemo.site.dongxiaoxu.controller;
+package site.dongxiaoxu.springbootdemo.controller;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import site.dongxiaoxu.springbootdemo.site.dongxiaoxu.model.User;
-import site.dongxiaoxu.springbootdemo.site.dongxiaoxu.service.IUserService;
-import site.dongxiaoxu.springboot.demo.aop.UserInfo;
-import site.dongxiaoxu.springboot.demo.aop.UserInfoParam;
+import site.dongxiaoxu.springbootdemo.config.UserInfo;
+import site.dongxiaoxu.springbootdemo.config.UserInfoParam;
+import site.dongxiaoxu.springbootdemo.model.User;
+import site.dongxiaoxu.springbootdemo.service.IUserService;
 
+import javax.servlet.http.HttpServletRequest;
+import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 @RestController
 @RequestMapping("/user")
@@ -47,7 +51,7 @@ public class UserController {
     public Map<String, Object> getUserInfo(@UserInfoParam UserInfo userInfo, HttpServletRequest request, String userName) throws IOException {
         Map<String, Object> rltMap = new HashMap<>();
 
-        rltMap.put("message", userInfo.getDispName());
+        rltMap.put("message", userInfo.getDisplayName());
         return rltMap;
     }
 

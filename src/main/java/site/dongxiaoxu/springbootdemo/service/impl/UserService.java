@@ -1,11 +1,11 @@
-package site.dongxiaoxu.springbootdemo.site.dongxiaoxu.service.impl;
+package site.dongxiaoxu.springbootdemo.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import site.dongxiaoxu.springbootdemo.site.dongxiaoxu.dao.IUserDao;
-import site.dongxiaoxu.springbootdemo.site.dongxiaoxu.model.User;
-import site.dongxiaoxu.springbootdemo.site.dongxiaoxu.service.IUserService;
+import site.dongxiaoxu.springbootdemo.dao.IUserDao;
+import site.dongxiaoxu.springbootdemo.service.IUserService;
+import site.dongxiaoxu.springbootdemo.model.User;
 
 import java.util.List;
 

@@ -12,8 +12,8 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 import org.springframework.test.web.servlet.setup.MockMvcBuilders;
 import org.springframework.web.context.WebApplicationContext;
-import site.dongxiaoxu.springbootdemo.site.dongxiaoxu.model.User;
-import site.dongxiaoxu.springbootdemo.site.dongxiaoxu.service.IUserService;
+import site.dongxiaoxu.springbootdemo.model.User;
+import site.dongxiaoxu.springbootdemo.service.IUserService;
 
 import java.util.Date;
 
